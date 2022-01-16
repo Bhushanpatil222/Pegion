@@ -79,7 +79,7 @@ body_mass_input = st.sidebar.slider('body mass(in g)' , float(df['body_mass_g'].
 
 sex = st.sidebar.selectbox('Gender' , ('Male' , 'Female'))
 
-if sex == Male :
+if sex == 'Male' :
 	sex = 0
 else :
 	sex = 1	
@@ -87,9 +87,9 @@ else :
 
 isl = st.sidebar.selectbox('Island' , ('Biscoe' , 'Dream' , 'Torgersen'))
 
-if isl == Biscoe :
+if isl == 'Biscoe' :
 	isl = 0
-elif isl == Dream :
+elif isl == 'Dream' :
     isl = 1
 else :
     isl = 2    	
